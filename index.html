@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav.portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sectionSelect = document.getElementById("section-select");
+
+            sectionSelect.addEventListener("change", function() {
+                const sectionId = this.value;
+                const section = document.getElementById(sectionId);
+
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <!-- <div class="logo">
+                </div> -->
+            </div>
+            <div class="nav-address border">
+                <a href="http://127.0.0.1:5500/index.html"  id="a1">home</a>
+                <!-- <div class="add-icon">
+                     -->
+                <!-- <select id="a2"><option href="#box2">About me</option><option>Education</option><option>Projects</option>
+                    <option>Contact</option><select> -->
+                        <select id="section-select">
+                            <option value="#">Select Section</option>
+                            <option value="box2">About me</option>
+                            <option value="box3">Education</option>
+                            <option value="box4">Projects</option>
+                            <option value="box5">Contacts</option>
+                        </select>
+                <!-- </div> -->
+            </div>
+            <div class="nav-search">
+                <!-- <select class="search-select">
+                    <option>ALL</option><option>Sedans</option>
+                    <option>SUV</option><option>Hatchback</option><option>Coupe</option>
+                    <option>Mpv</option>
+                </select> -->
+                <!-- <input placeholder="Search AutoWorld" class="search-input"> -->
+                <!-- <div class="search-icon" >
+                    <i class="fa-solid fa-magnifying-glass"></i></div> -->
+
+            </div>
+
+            <!-- <div class="nav-signin border">
+                <p><span>Sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+    
+            </div>
+            <div class="nav-type border">
+                <p><span>New </span></p>
+                <p class="nav-second">Cars</p>
+    
+            </div> -->
+
+            <div class="nav-videos">
+                <a href="https://www.hackerrank.com/profile/abhi1703y"><img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/8b9fc1fa-bb42-45c6-957b-3b6611c542f1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=4088" height="40">
+                </a>
+            </div>
+            <div class="nav-videos">
+                <a href="https://github.com/Gaurav-YB" ><img src="https://mizagbf.github.io/GBFAL/assets/ui/icon/github.png" height="40">
+                </a>
+            </div>
+            
+            <div class="nav-videos">
+                <a href="https://www.linkedin.com/in/gaurav-y-337985228/"><img src="https://w7.pngwing.com/pngs/418/162/png-transparent-feed-linkedin-media-news-social-social-links-icon.png" height="45">
+                </a>
+            </div>
+            <div class="nav-videos">
+                <a href="https://www.instagram.com/ab._.5791/"><img src="https://i.pinimg.com/736x/f8/8f/02/f88f02f7008f43f06759f84dbff257db.jpg" height="40">
+                </a>
+            </div>
+        </div>
+
+        <div class="panel">
+         <div class="panel-one">
+            <a href="https://www.canva.com/design/DAGJ_TRhoAg/rsYte_YT8QUr9nskTbjiLQ/view?utm_content=DAGJ_TRhoAg&utm_campaign=designshare&utm_medium=link&utm_source=editor">Resume</a>
+         </div>
+        </div>
+        <section class="c1">
+            <div class="circle" id="box1">
+            </div>
+            
+            <h1 class="iam">Hey, I'm Gaurav Y </h1>
+
+            <!-- <div class="color-changing-text">
+                <ul><li>front-end Developer</li></ul>
+            </div>
+            <div class="color-changing-text">
+                <ul><li>Programmer!</li></ul>
+            </div> <div class="color-changing-text">
+                <ul><li>Student!</li></ul>
+                
+            </div> <div class="color-changing-text">
+                <ul><li>Fitness Enthusiast!</li></ul>
+            </div> -->
+            <div class="color-changing-text">
+              <span class="line" style="animation-delay: 0s;">Front-end Developer!<br></span>
+              <span class="line" style="animation-delay: 3s;">Programmer!<br></span>
+              <span class="line" style="animation-delay: 6s;">Student!<br></span>
+              <span class="line" style="animation-delay: 6s;">Fitness Enthusiast!<br></span>
+            </div>
+            
+        
+            <!-- <h1 class="glowing-text">Glowing Text Animation</h1> -->
+            <!-- <span> "hi"
+                <span class="styles-module_blinkingCursor__yugAC styles-module_blinking__9VXRT" style="color: inherit;">|</span>
+            </span>     -->
+
+        </section>
+        <section class="c2" id="box2">
+            <div class="me">
+                ABOUT ME
+            </div>
+            
+             
+             <!-- <div class="vertical-line"></div> -->
+            
+            <div class="container">
+                <div class="row">
+                    <div class="column" id="one">
+                        Hey! i'm Gaurav Y Beerakodi pursuing Bachelors degree in Computer Science and Engineering at Sahyadri college of engineering and management
+                        A enthusiastic front-end developer with expertise in HTML, CSS, js, C and average python Knowledge. 
+                        Currently learning DSA and planning to learn backend.
+                        Looking forward to contribute my skills and experience for some amazing projects!<br><br><hr>
+                    </div>
+                    <div class="column" id="two">
+                        <h3 id="h3"><br><br><br><br>MY SKILLS <br>
+                        </h3>
+                        <div class="skills">
+                            <ul><li>HTML</li></ul>
+                        </div>
+                        <div class="skills">
+                            <ul><li>CSS</li></ul>
+                        </div>
+                        <div class="skills">
+                            <ul><li>JS</li></ul>
+                        </div>
+                        <div class="skills">
+                            <ul><li>C programming </li></ul>     
+                        </div> 
+                        <div class="skills">
+                            <ul><li>python programming<br><br><hr></li></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="details"><hr>
+                Email      : abhi1703y@gmail.com<br>
+                DOB        : 01 July 2003<br>
+                Address    : Manglore<br>
+                Occupation : Student
+            </div>
+        </section>
+
+        <section class="c3" id="box3">
+            <div class="edu">MY EDUCATION</div>
+            <!-- <section>
+                <div class="line"></div>
+            </section> -->
+            <div class="year">
+                2017
+                <div class="school">
+                    High School (till 8th std)
+                </div>
+                <div class="name">
+                    CENTRAL HIGH SCHOOL<br>
+                UNIVERSITY OF CAMBRIDGE
+                </div>
+            </div>
+            <!-- <section class="point">
+             <ul>
+                <i class="fa-regular fa-circle"></i>
+             </ul>
+            </section> -->
+            <div class="year1">
+                2019
+                <div class="school1">
+                    High School Graduate
+                </div>
+                <div class="name1">
+                    CANARA CBSE
+                </div>
+            </div>
+
+            <!-- <section class="point1"> 
+                <ul>
+                   <i class="fa-regular fa-circle"></i>
+                </ul>
+            </section> -->
+            <div class="year2">
+                2021
+                <div class="school2">
+                    Pre University Graduate
+                </div>
+                <div class="name2">
+                    CANARA PU COLLEGE 
+                </div>
+            </div>
+            
+            <!-- <section class="point2">
+                <ul>
+                   <i class="fa-regular fa-circle"></i>
+                </ul>
+            </section> -->
+            <div class="year3">
+                2025
+                <div class="school3">
+                    Bachelor Of Engineering
+                </div>
+                <div class="name3">
+                    SAHYADRI COLLEGE OF ENGINEERING AND MANAGEMENT
+                </div>
+            </div>
+            <!-- <section class="point3">
+                <ul>
+                   <i class="fa-regular fa-circle"></i>
+                </ul>
+            </section> -->
+
+
+        </section>
+
+        <section class="c4" id="box4">
+            <div class="pro">MY PROJECTS</div>
+            <!-- <div class="pro1">
+                Age and Gender detection using AI
+                <div><img src="OIP.jpg" height="200"></div>
+                <div class="des1">        
+ Detects the faces in an input image and
+ Predict the age and gender of individuals in detected faces. Uses separate pre-trained models for age prediction (ageNet) and gender prediction (genderNet). Implements the age gender detector function to extract facial regions, pre- process images, and obtain predictions for age and gender. Integrates age and gender information into the annotated image.
+                </div>
+            </div> -->
+            <div class="container1">
+                <div class="row1">
+                    <div class="column1" id="one">
+                        <div><img src="OIP.jpg" height="200"width="400"></div>
+                    </div>    
+                    
+                    <div class="column2" id="two">
+                        <h1 class="h1"> Age and Gender detection using AI</h1>
+                        Detects the faces in an input image and
+                        Predict the age and gender of individuals in detected faces. Uses separate pre-trained models for age prediction (ageNet) and gender prediction (genderNet). Implements the age gender detector function to extract facial regions, pre- process images, and obtain predictions for age and gender. Integrates age and gender information into the annotated image.
+                    </div> 
+                </div>
+            </div>
+            <div class="container1">
+                <div class="row1">
+                    <div class="column1" id="one">
+                        <div><img src="Screenshot 2024-07-04 224711.png" height="200"width="400" class="image2"></div>
+                    </div>    
+                    
+                    <div class="column2" id="two">
+                        <h1 class="h1">  NGO management System</h1>
+                        The NGO Management System is a solution for managing non-governmental organizations. It uses MySQL for database design to ensure data integrity. PHP handles backend development for authentication and data processing, while HTML, CSS, and JavaScript are used for building an intuitive and interactive frontend. Integration between PHP scripts and the MySQL database ensures efficient CRUD operations and data consistency.
+                         
+                    </div> 
+                </div>
+            </div>
+            <div class="container1">
+                <div class="row1">
+                    <div class="column1" id="one">
+                        <div><img src="R.jpg" height="200"width="400" ></div>
+                    </div>    
+                    
+                    <div class="column2" id="two">
+                        <h1 class="h1"> Hand Gesture Recognition for Speech and Hearing impaired Communication using YOLO algorithm<br>
+                        (ongoing project)</h1>
+                        Working on a hand sign detection project using YOLO and Fast-RNN models to aid individuals with speech and hearing impairments. Integrating these models into an interactive learning platform for real-time hand sign detection and sequential recognition. Currently designing voice-to-hand sign conversion features using speech-to-text and text-to-sign modules. Aim to optimize accuracy and usability for improved accessibility and interactive learning experiences.
+                    </div> 
+                </div>
+            </div>
+
+
+
+        </section>
+        <section class="c4" id="box4">
+            
+        </section>
+        <section class="c5" id="box5">
+            <div class="circle1" id="box1">
+            </div>
+                    <div class="contact">
+                        Contact me
+                    </div>
+                    <div class="namey">
+                        Contact Number :                           <br>                         8073784713                
+                    </div>
+                    <div class="namex">
+                        Email:<br>abhi1703y@gamil.com
+                    </div>
+                    <div class="navbar1">
+                        <div class="nav-logo border">
+                            
+                        </div>
+                        <div class="nav-address1 border">
+                            © Copyright 2024 - GauravYBeerakodi
+                        </div>
+                        <div class="nav-search1">
+                           
+                        </div>
+            
+                        
+            
+                        <div class="nav-videos">
+                            <a href="https://www.hackerrank.com/profile/abhi1703y"><img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/8b9fc1fa-bb42-45c6-957b-3b6611c542f1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=4088" height="40">
+                            </a>
+                        </div>
+                        <div class="nav-videos">
+                            <a href="https://github.com/Gaurav-YB" ><img src="https://mizagbf.github.io/GBFAL/assets/ui/icon/github.png" height="40">
+                            </a>
+                        </div>
+                        
+                        <div class="nav-videos">
+                            <a href="https://www.linkedin.com/in/gaurav-y-337985228/"><img src="https://w7.pngwing.com/pngs/418/162/png-transparent-feed-linkedin-media-news-social-social-links-icon.png" height="45">
+                            </a>
+                        </div>
+                        <div class="nav-videos">
+                            <a href="https://www.instagram.com/ab._.5791/"><img src="https://i.pinimg.com/736x/f8/8f/02/f88f02f7008f43f06759f84dbff257db.jpg" height="40">
+                            </a>
+                        </div>
+                    </div>
+            
+                    
+        </section>
+    
+
+    </header>
+</body>
+</html>
+
