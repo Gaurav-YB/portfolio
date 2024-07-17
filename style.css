@@ -84,7 +84,15 @@
     background-position:center;
     height:900px;
     z-index: 0;
+    width: 100%;
   
+}
+.containe{
+    overflow: hidden;
+    width  :100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
 }
 .circle{
     height :1200px;
@@ -98,7 +106,8 @@
     border-radius: 100%;
     animation: animate2 3s ease 0s infinite normal;
     position: absolute;
-    
+    z-index: 1;
+
 }
 
 @keyframes animate{
@@ -138,7 +147,7 @@
     }
 }
 .iam{
-    /* color: antiquewhite; */
+    
     margin-left:65% ;
     padding-top: 12%;
     font-size: 4em;
@@ -148,8 +157,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     animation: colorAnimation 5s linear infinite;
-    z-index: 30;
-    overflow:hidden;
+    z-index: 2;
+    position: relative;
 }
 .color-changing-text {
     font-size: 2.5em;
@@ -160,15 +169,15 @@
     background-clip: text;
     -webkit-background-clip: text;
     animation: colorAnimation 5s linear infinite;
-    /* padding: 10px; */
     text-align: center;
     margin-left:67% ;
-    margin-top: 0%;
-    overflow: hidden;
+    margin-top: 5%;
     padding: 1%;
-    text-align: left;    
-    z-index: 30;
-    overflow:hidden;
+    text-align: left;  
+    position: relative;
+    z-index: 2;
+   
+   
 }
 
 @keyframes colorAnimation {
