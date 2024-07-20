@@ -658,3 +658,103 @@ padding-top: 1%;
 .nav-address1{
     color: #000000;
 }
+
+@media screen and (max-width: 390px)
+{
+    .navbar{
+        height:69px;
+        width:50%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        position:fixed;
+        overflow: hidden;
+        z-index: 10;
+        /* background: linear-gradient(90deg,#000000 #363636,#000000, #000000, #000000,#363636); */
+    }
+}
+
+.c7{
+    height:900px;  
+    z-index:5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+h1{
+    background-color: black;
+    color: antiquewhite;
+    line-height: 5rem;
+}
+.choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    border-radius: 50%;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: rgb(104, 101, 101);
+}
+#img7{
+    border-radius: 50%;
+    width:70%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 5%;
+
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2 rem;
+    margin-top: 5%;
+    gap:15%;
+    color:rgb(222, 135, 135);
+}
+
+#userscore, #compscore{
+    font-size: 4rem;
+}
+
+.msg1{
+    margin-top: 2%;
+}
+
+#msg{
+    display: inline;
+    background-color: rgb(154, 150, 154);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    display: inline;
+    border-radius: 12%;
+    border-style:solid;
+    padding: 5px;
+}
+#mode{
+    background-color: rgb(154, 150, 154);
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    display: inline;
+    margin-left: 70%;
+    border-style:solid;
+    padding: 5px;
+    cursor: pointer;
+}
+#rps{
+    color:rgb(113, 113, 113);
+}
