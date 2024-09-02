@@ -20,30 +20,34 @@
     border:2px solid transparent;
 }
 .border:hover{
-    border:2px solid rgb(78, 75, 75);
+    border:2px solid rgb(0, 98, 255);
     background-color: rgb(0, 0, 0);
 }
 .border:active{
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(0, 98, 255);
 }
 .nav-address{
    margin-left: 120px;
 }
+.nav-videos:hover{
+    border:2px solid rgb(0, 98, 255);
+    background-color: rgb(0, 0, 0);
+}
 #a1{
-     color: #cccccc;
+     color: #ffffff;
      padding-top: 1px;
      font-size: 1rem;
      margin-left: 10px;
      margin-bottom: 5px;;
-     
 }
 #a2{
      color:rgb(14, 6, 6);
-     background-color: rgb(157, 157, 157);
-     font-size: 1rem;
+     background-color: rgb(255, 255, 255);
+     font-size: 7rem;
      margin-left: 20px;
      margin-top: 4px;;
 }
+
 .nav-search{
     display: flex;
     background-color: rgb(0, 0, 0);
@@ -71,7 +75,7 @@
     padding-top: 80px;
 }
 .panel-one:hover{
-    border:2px solid rgb(255, 249, 249);
+    border:2px solid rgb(0,98,255);
     background-color: #a49c9c;
 }
 .panel-one:active{
@@ -740,7 +744,7 @@ h1{
 }
 .choice:hover{
     cursor: pointer;
-    background-color: rgb(104, 101, 101);
+    background-color: rgb(0, 98, 255);
 }
 #img7{
     border-radius: 50%;
@@ -793,6 +797,10 @@ h1{
     border-style:solid;
     padding: 5px;
     cursor: pointer;
+}
+#mode:hover{
+    cursor: pointer;
+    border-color: rgb(0, 98, 255);
 }
 #rps{
     color:rgb(113, 113, 113);
