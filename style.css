@@ -85,7 +85,6 @@
     height:900px;
     z-index: 0;
     width: 100%;
-  
 }
 .containe{
     overflow: hidden;
@@ -404,8 +403,9 @@
 
 .c3{
     /* background-image: url("port3.jpg"); */
-    background-image:url("My first design.png");
-    background-repeat: no-repeat;
+    /* background-image:url("My first design.png");
+    background-repeat: no-repeat; */
+    background-color: #464444;
     background-size: cover;
     background-position:left;
     height:900px;  
@@ -419,8 +419,8 @@
     padding-top: 5%;
     text-decoration: underline;
 }
-
-/* .point{
+/* 
+.point{
     top: 33%;
     position: relative;
     margin-left: 5%;
@@ -439,19 +439,58 @@
     top: -45%;
     position:relative;
     margin-left: 85%;
-} */
-/* .fa-regular{
+}*/
+.fa-regular{
     font-size: 1.4rem;
     color: rgb(0, 38, 255);
     background-color: black;
     border-radius:90%;
-} */
-.year{
+} 
+
+
+.year1{
+    color: #000000;
+    font-size: 2.5rem;
+}
+.namet{
+    font-size: 2rem;
+    color:bisque ;
+}
+.table {
+    display: flex;
+    flex-direction: column; /* Arrange rows vertically */
+    width: 100%;
+    border: 2px solid #000000;
+    margin-top: 7%;
+}
+.row {
+    display: flex;
+    flex-direction: row; /* Arrange cells horizontally */
+    border-bottom: 1px solid #000000;
+}
+  
+.cell {
+    flex: 1; /* Make each cell take an equal amount of space */
+    padding: 10px;
+    border-right: 2px solid #000000;
+    text-align: center;
+}
+  
+.row:last-child {
+    border-bottom: none; /*Remove border from the last row */
+}
+  
+.cell:last-child {
+    border-right: none; /* Remove border from the last cell in each row */
+}
+  
+/* .year{
+    
     font-size:2.5rem;
     color: rgb(186, 173, 173);
     top: 10%;
     position: relative;
-    margin-left: 5%;
+    margin-left: 0%;
 }  
 .year1{
     font-size:2.5rem;
@@ -473,7 +512,7 @@
     top: 1%;
     position: relative;
     margin-left: 80%;
-}  
+}   */
 .school{
     font-size:1.2rem;
     color: rgb(234, 255, 2);
@@ -724,7 +763,7 @@ h1{
     font-size: 2 rem;
     margin-top: 5%;
     gap:15%;
-    color:rgb(222, 135, 135);
+    color:rgb(90, 87, 87);
 }
 
 #userscore, #compscore{
@@ -757,4 +796,254 @@ h1{
 }
 #rps{
     color:rgb(113, 113, 113);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        height: 60px;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .nav-search {
+        width: 500px;
+    
+    }
+
+    .panel-one {
+        width: 80px;
+        font-size: 0.9rem;
+    }
+
+    .color-changing-text {
+        font-size: 2em;
+        margin-left: 60%;
+    }
+
+    .circle {
+        height: 1000px;
+        width: 1000px;
+    }
+
+    .container {
+        height: 250px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .column {
+        font-size: 1.4rem;
+    }
+
+    .container1 {
+        padding-top: 5%;
+    }
+
+    .column1, .column2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .nav-address {
+        margin-left: 0;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .panel-one {
+        width: 60px;
+        font-size: 0.8rem;
+    }
+
+    .color-changing-text {
+        font-size: 1.8em;
+        margin-left: 50%;
+    }
+
+    .circle {
+        height: 800px;
+        width: 800px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        font-size: 1.2rem;
+    }
+
+    .container1 {
+        padding-top: 2%;
+    }
+
+    .column1, .column2 {
+        font-size: 0.9rem;
+    }
+
+    .contact {
+        margin-left: 5%;
+        padding-top: 5%;
+    }
+
+    .namey, .namex {
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+
+    .scoreboard {
+        font-size: 1.5rem;
+        gap: 10%;
+    }
+
+    #userscore, #compscore {
+        font-size: 3rem;
+    }
+
+    #mode {
+        margin-left: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-address {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .panel-one {
+        width: 50px;
+        font-size: 0.7rem;
+    }
+
+    .color-changing-text {
+        font-size: 1.5em;
+        margin-left: 40%;
+    }
+
+    .circle {
+        height: 600px;
+        width: 600px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        font-size: 1rem;
+    }
+
+    .container1 {
+        padding-top: 0%;
+    }
+
+    .column1, .column2 {
+        font-size: 0.8rem;
+    }
+
+    .contact {
+        margin-left: 2%;
+        padding-top: 2%;
+    }
+
+    .namey, .namex {
+        font-size: 1.2rem;
+        margin-left: 2%;
+    }
+
+    .scoreboard {
+        font-size: 1.2rem;
+        gap: 5%;
+    }
+
+    #userscore, #compscore {
+        font-size: 2.5rem;
+    }
+
+    #mode {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navbar {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        position:fixed;
+        font-size: 0.7rem;
+    }
+ 
+    .panel-one {
+        width: 40px;
+        font-size: 0.6rem;
+    }
+
+    .color-changing-text {
+        font-size: 1.5em;
+        margin-left: 30%;
+        margin-top: 80%;
+    }
+
+    .circle {
+        height: 500px;
+        width: 500px;
+    }
+
+    .contact {
+        margin-left: 0;
+        padding-top: 1%;
+    }
+
+    .namey, .namex {
+        font-size: 1rem;
+        margin-left: 1%;
+    }
+
+    .scoreboard {
+        font-size: 1rem;
+        gap: 3%;
+    }
+
+    #userscore, #compscore {
+        font-size: 2rem;
+    }
+
+    #mode {
+        margin-left: 10%;
+    }
 }
