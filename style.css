@@ -81,8 +81,10 @@
 .panel-one:active{
     background-color: rgb(212, 205, 205);
 }
+
 .c1{
     background-image:url("WhatsApp Image 2024-07-07 at 23.32.44_9c384014.jpg");
+    /* mix-blend-mode: color-burn; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -100,14 +102,15 @@
 .circle{
     height :1200px;
     width  :1200px;
-    border:45px solid rgb(82, 82, 82);
-    border-top:85px solid hsl(0, 0%, 0%);
-    border-left:55px solid #000000;
+    border:75px solid rgb(0, 0, 0);
+    border-top:75px solid hsl(0, 0%, 0%);
+    border-left:75px solid #000000;
     border-right:75px solid #000000; 
-    border-style:dashed; 
+    border-bottom:75px solid rgba(15, 15, 15, 0.512);
+    border-style:solid; 
     margin-left: 50%;    
     border-radius: 100%;
-    animation: animate2 3s ease 0s infinite normal;
+    animation: animate2 2s ease 0s infinite normal;
     position: absolute;
     z-index: 1;
 
@@ -354,10 +357,16 @@
     font-size: 1.3rem;
     margin-left:6%;
     margin-right:6%;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap;
+    display:flexbox;
+    flex-wrap: wrap; */
     flex: 0 0 auto;
-    width:50%;
+    width:20%;
+    height: 40%;
     margin-top: 12%;
+}
+.d{
+    
 }
 
 /* .vertical-line {
