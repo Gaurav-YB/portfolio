@@ -93,3 +93,45 @@ choices.forEach((choice) => {
         playgame(choiceid);
     });
 });
+
+const textElement = document.getElementById('text');
+const words = [
+    'Java Full-Stack Developer!',
+    'Problem-solving enthusiast!',
+    'AI/ML project Developed!',
+    'Programmer!',
+    'Fitness Enthusiast!',
+    'Car Enthusiast!',
+    'Enthusiast Leetcode Solver!'
+];
+
+
+let currentIndex = 0; // Current word index
+let letterIndex = 0; // Current letter index
+let isDeleting = false; // Deletion state
+const typingSpeed = 50; // Speed of typing (lower is faster)
+const deletingSpeed = 35; // Speed of deleting (lower is faster)
+const delayBetweenWords = 1000; // Pause before typing the next word
+
+function type() {
+    const currentWord = words[currentIndex];
+    if (isDeleting) {
+        // Deleting letters
+        textElement.textContent = currentWord.slice(0, letterIndex--);
+        if (letterIndex < 0) {
+            isDeleting = false;
+            currentIndex = (currentIndex + 1) % words.length; // Move to the next word
+        }
+    } else {
+        // Typing letters
+        textElement.textContent = currentWord.slice(0, letterIndex++);
+        if (letterIndex > currentWord.length) {
+            isDeleting = true;
+            setTimeout(type, delayBetweenWords); // Pause before deleting
+            return;
+        }
+    }
+    setTimeout(type, isDeleting ? deletingSpeed : typingSpeed); // Typing or deleting speed
+}
+
+type();
