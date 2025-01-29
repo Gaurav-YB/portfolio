@@ -93,7 +93,6 @@ choices.forEach((choice) => {
         playgame(choiceid);
     });
 });
-
 const textElement = document.getElementById('text');
 const words = [
     'Java Full-Stack Developer!',
@@ -105,33 +104,92 @@ const words = [
     'Enthusiast Leetcode Solver!'
 ];
 
+let currentIndex = 0;
+let letterIndex = 0;
+let isDeleting = false;
+const typingSpeed = 50;
+const deletingSpeed = 35;
+const delayBetweenWords = 1000;
 
-let currentIndex = 0; // Current word index
-let letterIndex = 0; // Current letter index
-let isDeleting = false; // Deletion state
-const typingSpeed = 50; // Speed of typing (lower is faster)
-const deletingSpeed = 35; // Speed of deleting (lower is faster)
-const delayBetweenWords = 1000; // Pause before typing the next word
-
-function type() {
+function typeText() {
     const currentWord = words[currentIndex];
     if (isDeleting) {
-        // Deleting letters
         textElement.textContent = currentWord.slice(0, letterIndex--);
         if (letterIndex < 0) {
             isDeleting = false;
-            currentIndex = (currentIndex + 1) % words.length; // Move to the next word
+            currentIndex = (currentIndex + 1) % words.length;
         }
     } else {
-        // Typing letters
         textElement.textContent = currentWord.slice(0, letterIndex++);
         if (letterIndex > currentWord.length) {
             isDeleting = true;
-            setTimeout(type, delayBetweenWords); // Pause before deleting
+            setTimeout(typeText, delayBetweenWords);
             return;
         }
     }
-    setTimeout(type, isDeleting ? deletingSpeed : typingSpeed); // Typing or deleting speed
+    setTimeout(typeText, isDeleting ? deletingSpeed : typingSpeed);
 }
 
-type();
+typeText();
+
+function initializeText1() {
+    const textElement1 = document.getElementById('text1');
+
+    if (!textElement1) return; // If element doesn't exist, exit
+
+    if (window.innerWidth <= 390) {
+        if (!textElement1.dataset.started) { // Prevent multiple executions
+            textElement1.dataset.started = "true";
+
+            const words1 = [
+                'Java Full-Stack Developer!',
+                'Problem-solving enthusiast!',
+                'AI/ML project Developed!',
+                'Programmer!',
+                'Fitness Enthusiast!',
+                'Car Enthusiast!',
+                'Enthusiast Leetcode Solver!'
+            ];
+
+            let currentIndex1 = 0;
+            let letterIndex1 = 0;
+            let isDeleting1 = false;
+            const typingSpeed1 = 50;
+            const deletingSpeed1 = 35;
+            const delayBetweenWords1 = 1000;
+
+            function typeText1() {
+                const currentWord = words1[currentIndex1];
+                if (isDeleting1) {
+                    textElement1.textContent = currentWord.slice(0, letterIndex1--);
+                    if (letterIndex1 < 0) {
+                        isDeleting1 = false;
+                        currentIndex1 = (currentIndex1 + 1) % words1.length;
+                    }
+                } else {
+                    textElement1.textContent = currentWord.slice(0, letterIndex1++);
+                    if (letterIndex1 > currentWord.length) {
+                        isDeleting1 = true;
+                        setTimeout(typeText1, delayBetweenWords1);
+                        return;
+                    }
+                }
+                setTimeout(typeText1, isDeleting1 ? deletingSpeed1 : typingSpeed1);
+            }
+
+            typeText1(); // Start typing effect
+        }
+    } else {
+        textElement1.dataset.started = ""; // Reset when resizing back
+    }
+}
+
+// Run on page load
+initializeText1();
+
+// Run only when resizing to small screens
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 390) {
+        initializeText1();
+    }
+});
