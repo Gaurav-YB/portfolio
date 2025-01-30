@@ -709,7 +709,7 @@
     font-size: 1.2rem;
     background: linear-gradient(180deg, #1b1b1b, #1b1b1b, #2b2b2b8e,#1b1b1b,  #1b1b1b);
     backdrop-filter: blur(10px);
-    font-family:cursive;
+    
     border-radius: 10px;
     height: 100px;
     width: 400px;    
@@ -835,6 +835,7 @@ h1{
     display: none;
 }
 
+
 @media screen and (max-width: 412px) {
 .navbar{
     height:69px;
@@ -949,7 +950,6 @@ h1{
     }
     .info-id1{
         color:#535656;
-        
     }
     .row{
         display: flex;
@@ -965,20 +965,47 @@ h1{
     .skills{
         font-size: 1rem;
     }
-    .imagesp1{
-      width: 600px;
-      height: 500px;
-    }
-    .container1{
-        display: flex;
-        flex-wrap: nowrap;   
-    }
+   
     .contact2{
         font-size: 3rem;
     }
     .namey{
         width:300px;
     }
+    .namet{
+        font-size: 1.5rem;
+    }
+    .msg1{
+        font-size: 1rem;
+        display: flex;
+    }
+    
+    
+    .container1 img{
+        width: 150px;
+        height: 160px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .container2 img{
+        width: 150px;
+        height: 160px;
+        display: flex;
+        flex-direction: column; 
+    }
+    #box4{
+        display: none;
+    }
+    .navbar{
+        width: 350px;
+    }
+    .navbar-icons img {
+        flex-shrink: 0;
+    }
+    .navbar1 img{
+        width: 30px;
+    }
+    
     
   }
   
@@ -993,13 +1020,7 @@ h1{
     h1, h2, h3 {
       font-size: 1.5em;
     }
-  
-    img {
-      width: 100%; /* Make images responsive */
-      height: auto;
-    }
 
-   
     .container {
       flex-direction: column; /* Stack elements vertically */
       align-items: center;
@@ -1082,6 +1103,7 @@ h1{
     .skills{
         font-size: 1rem;
     }
+    
   }
   
 
