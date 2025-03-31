@@ -268,15 +268,27 @@
 }
 
  .info{
-    background: linear-gradient(180deg,#000000, #000000,#000000,#000000, #272525b8,#000000,#000000);
-    height: 100vh;
+    height: 900px;
+    background-image: url("https://wallpapercave.com/wp/wp7795842.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-attachment: fixed;
+    
      display: flex;
     /*align-items: center; */
     justify-content: center;
  }
+ .info2{
+    background: linear-gradient(180deg,#000000, #000000,#000000,#000000,black,#000000,black,black,transparent,#000000,black);
+    height: 100vh;
+ }
  .leetcode{
     padding-top :40px;
     transition: 1s ease ;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
  }
  .leetcode:hover{
     scale: 0.95;
@@ -293,7 +305,7 @@
  .info-id1 {
     margin-top: 30px;
     color: transparent;
-    background: linear-gradient(90deg,rgb(0, 0, 0), #416273, rgb(0, 0, 0), rgb(0, 0, 0),rgb(0, 0, 0));
+    background: linear-gradient(90deg,rgb(0, 0, 0), white, rgb(0, 0, 0), rgb(0, 0, 0),rgb(0, 0, 0));
     background-size: 200% 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -303,13 +315,62 @@
     font-weight:lighter; 
     text-align: center; 
   }
+
+.c12{
+    height: 900px;
+    background-image: url("https://wallpaperbat.com/img/87407-download-wallpaper-2560x1440-code-coding-binary-code-abstract.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-attachment: fixed;
+}
+.c122{
+    height: 900px;
+    background: linear-gradient(black,black,black,transparent , black);
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 30% 30%;
+    grid-template-rows:90% 90%;
+    column-gap: 50px; */
+}
+.item1{
+    background-color:  #171717d7;
+    height: 300px;
+    width: 40%;
+    margin-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 228, 196, 0.768);
+}
+.item2{
+    background-color:  #171717d7;
+    height: 300px;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 228, 196, 0.768);
+}
 .c2{
-    background-color: #000000;
-    height:900px;
-    /* margin-top: -430px; */    
+    height: 900px;
+    background-image: url("https://wallpapercave.com/wp/wp7795842.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-attachment: fixed;
     z-index: 1;
     overflow: hidden;
     position: relative;
+    
+}
+.c22{
+    height: 100%;
+    background: linear-gradient(black,black,black,transparent,black);
 }
 .me{
     width:100%;
@@ -342,6 +403,7 @@
     /* white-space: pre-wrap;
     display:flexbox;
     flex-wrap: wrap; */
+    border-radius: 20px;
     flex: 0 0 auto;
     width:30%;
     height: 18%;
@@ -401,6 +463,7 @@
     margin-left:6%;
     margin-top: 3%;
     transition: 1s ease;
+    border-radius: 20px;
     /* border: 2px solid black; */
     background: linear-gradient(180deg, #1717178e,  #1b1b1b);
 }
@@ -1067,9 +1130,14 @@ h1{
     .circle{
         display: inline;
     }
-    
-    
- 
+   
+    .expheading{
+        font-size: 12px;
+    }
+
+    .expheading2{
+        font-size: 10px;
+    }
     .card {
       width: 90%; /* Reduce card width */
       margin: 10px auto;
